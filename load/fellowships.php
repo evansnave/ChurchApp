@@ -18,8 +18,8 @@ if ($count == 0 && empty($rows)) {
                 <th class="text-center">#</th>
                 <th>Name of Family</th>
                 <th>Family Leader</th>
+                <th class="text-center">Family Members</th>
                 <th class="text-center">Assigned First timers</th>
-            <th class="text-center">Family Members</th>
                 <th class="text-center">Action</th>
             </tr>
         </thead>

@@ -531,7 +531,7 @@ function upcomingBirthdays($db)
 {
     $month = date('m');
     $day = date('d');
-    $query = "SELECT * FROM `members` WHERE member_status = 'active' AND month(dob) = $month AND day(dob) = $day ORDER BY dob desc ";
+    $query = "SELECT * FROM `members` WHERE member_status = 'active' AND month(dob) = $month AND day(dob) > $day ORDER BY day(dob)";
     $statement = $db->prepare($query);
     $statement->execute();
     $count = $statement->rowCount();
