@@ -14,11 +14,11 @@ include_once 'helpers/admin_access.php';
                                 <div class="card">
                                     <div class="row card-header">
                                         <div class="col-md-6 text-left">
-                                            <h4 class="text-muted">Members</h4>
+                                            <h4 class="text-muted">Infant Dedication</h4>
                                         </div>
                                         <div class=" col-md-6 text-right">
                                             <button name="add" id="add_member" data-toggle="modal" data-target="#member_modal" class="btn btn-dark">
-                                                Add Member
+                                                Add A Child
                                             </button>
                                         </div>
                                     </div>
@@ -32,19 +32,10 @@ include_once 'helpers/admin_access.php';
                         </div>
                     </div>
                 </div>
-                <?php include 'partials/modals/_members.php' ?>
+                <?php include 'partials/modals/_child_dedication.php' ?>
             </div>
         </div>
     </div>
 </div>
 <?php include_once "partials/_footer.php"; ?>
-<script src="assets/js/members.js"></script>
-<script>
-function yesnoCheck() {
-    if (document.getElementById('yesCheck').checked) {
-        document.getElementById('ifNo').style.visibility = 'hidden';
-    }
-    else document.getElementById('ifNo').style.visibility = 'visible';
-
-}
-</script>
+<script src="assets/js/child_dedication.js"></script>

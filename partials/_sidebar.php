@@ -2,8 +2,8 @@
     <div class="navbar-wrapper">
         <div class="navbar-brand header-logo">
             <a href="dashboard.php" class="b-brand">
-                <img src="assets/images/pci.jpg" height="50px" width="60px" alt="">
-                <span class="b-title">Rehoboth Temple</span>
+                <img src="assets/images/gb.jpg" height="50px" width="60px" alt="">
+                <span class="b-title">NLCBC</span>
             </a>
             <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
         </div>
@@ -22,26 +22,20 @@
                         </a>
                     </li>
 
-                    <li class="nav-item pcoded-hasmenu pcoded-trigger">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">Members Bio</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="members.php" class="">Members</a></li>
-                            <li class=""><a href="attendance.php" class="">Attendance</a></li>
-                            <li class=""><a href="first_timers.php" class="">First Timers</a></li>
-                           
-                        </ul>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link">
+                            <span class="pcoded-micon">
+                                <i class="feather icon-users"></i>
+                            </span>
+                            <span class="pcoded-mtext">Members Bio</span></a>
+                            <ul class="pcoded-submenu">
+                                <li class=""><a href="members.php" class="">Members</a></li>
+                                <li class=""><a href="attendance.php" class="">Attendance</a></li>
+                                <li class=""><a href="first_timers.php" class="">First Timers</a></li>
+                            </ul>
                     </li>
 
-                    <!-- <li class="nav-item ">
-                        <a href="attendance.php" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-check-circle"></i>
-                            </span>
-                            <span class="pcoded-mtext">Attendance</span>
-                        </a>
-                    </li> -->
-
-                    <li class="nav-item pcoded-hasmenu pcoded-trigger">
+                    <li class="nav-item pcoded-hasmenu">
                         <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-award"></i></span><span class="pcoded-mtext">Leaders Bio</span></a>
                         <ul class="pcoded-submenu">
                             <li class=""><a href="leaders.php" class="">Leaders</a></li>
@@ -50,23 +44,6 @@
                            
                         </ul>
                     </li>
-
-                    <!-- <li class="nav-item ">
-                        <a href="Leaders_attendance.php" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-box"></i>
-                            </span>
-                            <span class="pcoded-mtext">Leaders Attendance</span>
-                        </a>
-                    </li> -->
-                    <!-- <li class="nav-item ">
-                        <a href="leaders.php" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-box"></i>
-                            </span>
-                            <span class="pcoded-mtext">Leaders</span>
-                        </a>
-                    </li> -->
 
                     <li class="nav-item ">
                         <a href="Ministries.php" class="nav-link ">
@@ -86,16 +63,16 @@
                         </a>
                     </li>
 
-                    <li class="nav-item pcoded-hasmenu pcoded-trigger">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">Rehoboth Families</span></a>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">Cells</span></a>
                         <ul class="pcoded-submenu">
-                            <li class=""><a href="fellowship.php" class="">Families</a></li>
-                            <li class=""><a href="cell_first_timers.php" class="">Family first timers</a></li>
+                            <li class=""><a href="fellowships.php" class="">Cells</a></li>
+                            <li class=""><a href="cell_first_timers.php" class="">Cell first timers</a></li>
 
                             </ul>
                     </li> 
 
-                    <li class="nav-item pcoded-hasmenu pcoded-trigger">
+                    <li class="nav-item pcoded-hasmenu">
                         <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-book"></i></span><span class="pcoded-mtext">Foundation School</span></a>
                         <ul class="pcoded-submenu">
                             <li class=""><a href="foundation_school.php" class="">Foundation Classes</a></li>
@@ -103,14 +80,19 @@
 
                             </ul>
                     </li> 
-                    <li class="nav-item pcoded-hasmenu pcoded-trigger">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-bar-chart"></i></span><span class="pcoded-mtext">Finances</span></a>
+                    <li class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link ">
+                            <span class="pcoded-micon">
+                                <i class="feather icon-bar-chart"></i>
+                            </span>
+                            <span class="pcoded-mtext">Finances</span>
+                        </a>
                         <ul class="pcoded-submenu">
                             <li class=""><a href="offerings.php" class="">Offerings</a></li>
                             <li class=""><a href="tithes.php" class="">Tithes</a></li>
                             <li class=""><a href="fundraising.php" class="">Fundraising</a></li>
-
-                            </ul>
+                            <li class=""><a href="finacial_report.php" class="">Financial Report</a></li>
+                        </ul>
                     </li> 
 
                     <li class="nav-item ">
@@ -122,33 +104,6 @@
                         </a>
                     </li>
 
-                    <!-- <li class="nav-item ">
-                        <a href="members.php" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-users"></i>
-                            </span>
-                            <span class="pcoded-mtext">Members</span>
-                        </a>
-                    </li> -->
-
-                    <!-- <li class="nav-item ">
-                        <a href="first_timers.php" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-user-plus"></i>
-                            </span>
-                            <span class="pcoded-mtext">First Timers</span>
-                        </a>
-                    </li> -->
-
-                    <!-- <li class="nav-item ">
-                        <a href="cell_first_timers.php" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-box"></i>
-                            </span>
-                            <span class="pcoded-mtext">Family First Timers</span>
-                        </a>
-                    </li> -->
-
                     <li class="nav-item ">
                         <a href="follow_up.php" class="nav-link ">
                             <span class="pcoded-micon">
@@ -158,32 +113,25 @@
                         </a>
                     </li>
 
-                    <!-- <li class="nav-item ">
-                        <a href="fellowships.php" class="nav-link ">
+                    <li class="nav-item ">
+                        <a href="families.php" class="nav-link ">
                             <span class="pcoded-micon">
-                                <i class="feather icon-layers"></i>
+                                <i class="feather icon-activity"></i>
                             </span>
                             <span class="pcoded-mtext">Families</span>
                         </a>
-                    </li> -->
+                    </li>
 
-                    <!-- <li class="nav-item ">
-                        <a href="foundation_school.php" class="nav-link ">
+                    <li class="nav-item ">
+                        <a href="child_dedication.php" class="nav-link ">
                             <span class="pcoded-micon">
-                                <i class="feather icon-star"></i>
+                                <i class="feather icon-activity"></i>
                             </span>
-                            <span class="pcoded-mtext">Foundation School</span>
+                            <span class="pcoded-mtext">Infant Dedication</span>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a href="foundation_school_teachers.php" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-star"></i>
-                            </span>
-                            <span class="pcoded-mtext">Foundation School Teachers</span>
-                        </a>
-                    </li> -->
 
+                    
                     <li class="nav-item ">
                         <a href="baptism.php" class="nav-link ">
                             <span class="pcoded-micon">
@@ -194,17 +142,15 @@
                     </li>
 
 
-                    <li class="nav-item pcoded-hasmenu pcoded-trigger">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-bar-chart"></i></span><span class="pcoded-mtext">Kingdom Kids</span></a>
-                        <ul class="pcoded-submenu">
-                            <li class=""><a href="Infants.php" class="">Infants</a></li>
-                            <li class=""><a href="teens.php" class="">Teens</a></li>
-                            
-
+                    <li class="nav-item pcoded-hasmenu">
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon">
+                            <i class="feather icon-bar-chart"></i>
+                            </span><span class="pcoded-mtext">Kingdom Kids</span></a>
+                            <ul class="pcoded-submenu">
+                                <li class=""><a href="Infants.php" class="">Infants</a></li>
+                                <li class=""><a href="teens.php" class="">Teens</a></li>
                             </ul>
                     </li> 
-
-                   
 
                     <li class="nav-item ">
                         <a href="users.php" class="nav-link ">
@@ -296,7 +242,7 @@
                     </li> 
                 <?php } ?>
                 
-                <!-- <li class="nav-item pcoded-hasmenu active pcoded-trigger">
+                <!-- <li class="nav-item pcoded-hasmenu active">
                         <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Components</span></a>
                         <ul class="pcoded-submenu">
                             <li class=""><a href="bc_button.html" class="">Button</a></li>

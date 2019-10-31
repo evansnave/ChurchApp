@@ -2,7 +2,7 @@
 <div class="auth-wrapper">
     <div class="auth-content">
         <div class="auth-bg">
-            <span class="r"></span>
+            <!-- <span class="r"></span> -->
             <span class="r s"></span>
             <span class="r s"></span>
             <span class="r"></span>
@@ -10,14 +10,14 @@
 
         <div class="card">
             <center>
-            <img src="assets/images/pci.jpg" alt="" style="height:100px;width:100px; margin-top:-50px;border-radius:50%">
+            <img src="assets/images/gb.jpg" alt="" style="height:100px;width:100px; margin-top:-50px;border-radius:50%">
             </center>
             <form method="POST" id="login_form">
                 <div class="card-body text-center">
                     <div class="mb-4">
                         <h3></h3>
                         <h3 class="text-muted">
-                            Perez Chapel International-Rehoboth Temple
+                            NEW LIFE COMMUNITY BAPTIST CHURCH
                         </h3>
                     </div>
                     <h3 class="mb-4">

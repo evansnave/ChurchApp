@@ -6,11 +6,24 @@ include('../helpers/functions.php');
 
 if (isset($_POST['btn_action'])) {
     if ($_POST['btn_action'] == 'Add') {
+        
         if ($_SESSION['role'] == 'cell_leader') {
             $cell_id = $_SESSION['cell_id'];
         }else {
-            $cell_id = $_POST['cell'];
+            $cell_id = '0';
         }
+
+        if ($_POST['family_head'] === 'yes') {
+            $query = "INSERT INTO families (family_head) VALUES (:family_head)";
+            $statement = $db->prepare($query);
+            $statement->execute(
+                array(
+                    ':family_head'  =>    trim($_POST["fullname"]),
+                )
+            );
+        }
+        $family_id = $db->lastInsertId();
+        
         $phone_number = $_POST['phone_number'];
         $query = "SELECT * FROM `members` WHERE member_status ='active' AND phone_number = $phone_number";
         $statement = $db->prepare($query);
@@ -19,8 +32,8 @@ if (isset($_POST['btn_action'])) {
         if ($count >= 1) {
             echo '<div class="alert alert-danger text-center">' . $_POST['fullname'] . ' already exists in our database</div>';
         } else {
-            $query = "INSERT INTO members (title, fullname, phone_number, residence, gender, age, marital_status,occupation,foundation_school, baptism ,dob,year_joined,cell,department,ministries) 
-				VALUES (:title, :fullname, :phone_number, :address,:gender, :age, :marital_status, :occupation, :foundation_school, :baptism, :dob,:year_joined,:cell,:department,:ministries)
+            $query = "INSERT INTO members (title, fullname, phone_number, residence, gender, age, marital_status,occupation,foundation_school, baptism ,dob,year_joined,cell,department,ministries,families) 
+				VALUES (:title, :fullname, :phone_number, :address,:gender, :age, :marital_status, :occupation, :foundation_school, :baptism, :dob,:year_joined,:cell,:department,:ministries,:families)
 				";
             $statement = $db->prepare($query);
             $statement->execute(
@@ -40,6 +53,7 @@ if (isset($_POST['btn_action'])) {
                     ':cell'                 =>    $cell_id,
                     ':department'           =>    $_POST['department'],
                     ':ministries'           =>    $_POST['ministries'],
+                    ':families'           =>    $family_id,
                 )
             );
 
@@ -93,6 +107,8 @@ if (isset($_POST['btn_action'])) {
             $output['year_joined']          = $row['year_joined'];
             $output['cell']                 = $row['cell'];
             $output['department']           = $row['department'];
+            $output['ministries']           = $row['ministries'];
+            // $output['families']             = $row['families'];
         }
         echo json_encode($output);
     }
@@ -101,7 +117,7 @@ if (isset($_POST['btn_action'])) {
         if ($_SESSION['role'] == 'cell_leader') {
             $cell_id = $_SESSION['cell_id'];
         } else {
-            $cell_id = $_POST['cell'];
+            $cell_id = '';
         }
         $query = "UPDATE members 
                 SET title               = :title,
@@ -117,8 +133,8 @@ if (isset($_POST['btn_action'])) {
                     dob                 = :dob,
                     year_joined         = :year_joined,
                     cell                = :cell,
-                    department          = :department
-
+                    department          = :department,
+                    ministries          = :ministries
                 WHERE id = :id";
         $statement = $db->prepare($query);
         $statement->execute(
@@ -137,6 +153,7 @@ if (isset($_POST['btn_action'])) {
                 ':year_joined'          =>    $_POST['year_joined'],
                 ':cell'                 =>    $cell_id,
                 ':department'           =>    $_POST['department'],
+                ':ministries'           =>    $_POST['ministries'],
                 ':id'                   =>    $_POST['id']
             )
         );

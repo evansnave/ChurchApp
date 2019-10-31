@@ -236,6 +236,18 @@ function listOfCells($db)
     }
     return $output;
 }
+function listOfFamilies($db)
+{
+    $query = "SELECT * FROM families WHERE cell_status = 'active' ORDER BY family_head ";
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $output = '';
+    foreach ($result as $row) {
+        $output .= '<option value="' . $row["id"] . '">' . $row["family_head"] . '</option>';
+    }
+    return $output;
+}
 
 function listOfTeachers($db)
 {

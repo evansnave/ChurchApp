@@ -13,7 +13,14 @@ include_once 'helpers/functions.php';
 
                     <div class="form-group">
                         <label>Title</label>
-                        <input type="text" name="title" id="title" class="form-control" required />
+                        <select name="title" id="title" class="form-control">
+                            <option>Select Title</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rev">Rev</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
@@ -59,6 +66,8 @@ include_once 'helpers/functions.php';
                                     <option></option>
                                     <option value="married">Married</option>
                                     <option value="single">Single</option>
+                                    <option value="divorced">Divorced</option>
+                                    <option value="widowed">Widowed</option>
                                 </select>
                             </div>
                         </div>

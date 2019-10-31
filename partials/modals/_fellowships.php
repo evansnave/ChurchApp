@@ -7,12 +7,12 @@
         <form method="post" id="cell_form">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title"><i class="fa fa-plus"></i> Add a Family</h4>
+                    <h4 class="modal-title"><i class="fa fa-plus"></i> Add a Cell</h4>
                 </div>
                 <div class="modal-body">
 
                     <div class="form-group">
-                        <label>Name of Family</label>
+                        <label>Name of Cell</label>
                         <input type="text" name="name_of_cell" id="name_of_cell" class="form-control" required />
                     </div>
 
